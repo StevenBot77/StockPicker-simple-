@@ -1,0 +1,52 @@
+/* Center the h1 tag */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Add some padding to the container */
+.container {
+  padding: 2rem;
+}
+
+/* Add a box shadow to the card */
+.card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some margin to the table */
+.table {
+  margin-bottom: 0;
+}
+
+/* Add some padding to the table cells */
+.table td {
+  padding: 0.5rem;
+}
+
+/* Add some margin to the button */
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Remove the default button style */
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Add a hover effect to the button */
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add a minimalistic font */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}

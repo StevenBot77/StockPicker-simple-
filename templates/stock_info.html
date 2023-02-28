@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ symbol }} Info</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Stock Info</a>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">{{ symbol }} Info</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">{{ symbol }} Info</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>Current Price</td>
+                                                <td>${{ current_price }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Open Price</td>
+                                                <td>${{ open_price }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>High Price</td>
+                                                <td>${{ high_price }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Low Price</td>
+                                                <td>${{ low_price }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Volume</td>
+                                                <td>{{ volume }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <a href="/" class="btn btn-primary">Search for another stock</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Import Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

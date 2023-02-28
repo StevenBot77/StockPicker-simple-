@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Picker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Stock Picker</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Stock Picker</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form method="POST" action="/get_stock_info" class="p-4 bg-light border rounded-3">
+                    <div class="form-group">
+                        <label for="symbol" class="form-label">Enter a stock symbol</label>
+                        <input type="text" class="form-control" id="symbol" name="symbol" required>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Get Info</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Import Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

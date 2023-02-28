@@ -1,0 +1,93 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    border-radius: 0;
+    border-color: #ced4da;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centered form {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .centered form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .centered form input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .centered form button[type="submit"] {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .centered form button[type="submit"]:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .stock-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
